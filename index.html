@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energias Renováveis</title>
+    <style>
+        body {
+            margin: 0;
+            /*font-family: Arial, sans-serif;*/
+            font-family: "Roboto", sans-serif;
+        }
+        .h2{
+            color: #23282e;
+            /*line-height: 1;*/
+            font-style: normal;
+            font-size: 50px;
+            font:bold;
+        }
+        h3{
+            color: #0f0f61;
+            /*line-height: 1.2;*/
+            
+        }
+        .menu {
+            display: flex; /*O container passa a ser flexBox*/ 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(42, 165, 5, 0.904);
+            /*color: rgb(66, 59, 59);*/
+            padding: 30px 0;
+            text-align: center;
+            z-index: 1000;
+            align-items: center;
+            flex-direction:row;
+            justify-content: center;
+            
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menu a:hover {
+            /*background-color: rgba(0, 0, 0, 0.199);*/
+        }
+        .hero {
+            background-image: url('img/img1.jpg'); /* Nome da imagem local */
+            height: 100vh; /* Ocupa a altura total da tela */
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            position: relative;
+            color: white;
+            background-size: cover; /* Cobre toda a área */
+            background-position: center; /* Centraliza a imagem */
+        }
+        .hero h1 {
+            position: absolute;
+            text-align: justify;
+            font-size: 7em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .Text-coment {
+            display: flex;
+            align-items: center;
+            margin: 60px 0;
+            width: 70%; /* Ocupa toda a largura */
+            max-width: 1200px; /* Limita a largura máxima dos blocos */
+            margin: 80px auto; /* Centraliza os blocos */
+            font-size: 25px;
+            text-align: justify;
+            line-height: 1.8; /* Espaçamento entre linhas */
+            letter-spacing: 0.5px; /* Espaçamento entre letras */
+            margin-bottom: 20px; /* Espaço entre parágrafos */
+            
+        }        
+        .block {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%; /* Ocupa toda a largura */
+            max-width: 1200px; /* Limita a largura máxima dos blocos */
+            margin: 10px auto; /* Centraliza os blocos */
+        }
+        .block img {
+            max-width: 400px; /* Tamanho da imagem */
+            margin-right: 30px; /* Espaçamento entre a imagem e o texto */
+        }
+        .block h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .block p {
+            margin: 5px 0 0;
+        }
+        .button {
+            background-color: #3eca1a; /* Cor do botão */
+            color: white;
+            border: none;
+            padding: 3px 6px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2em;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+        .button:hover {
+            background-color: #45a049; /* Cor ao passar o mouse */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a>Início</a>
+        <a href="solar.html">Energia Solar</a>
+        <a href="eolica.html">Energia Eólica</a>
+        <a href="eolica.html">Energia Hídrica</a>
+        <a href="#contato">Energia Biomassa</a>
+        <a href="#faq">Energia Geotérmica</a>
+        <a href="#faq">Energia Oceânica</a>
+    </div>
+
+    <div class="hero" >
+        <h1>Energias Renováveis</h1>        
+    </div>
+    <div >
+        
+     <p class="Text-coment">
+        A energia renovável é uma alternativa sustentável que busca reduzir o impacto ambiental e 
+        promover um futuro mais limpo. Proveniente de fontes naturais, como o sol, vento, água, biomassa 
+        e geotermia, essa forma de energia é inexplorável e, ao contrário dos combustíveis fósseis, não se esgota com o tempo.
+            <br>
+        Com o aumento das preocupações sobre as mudanças climáticas e a necessidade de reduzir as 
+        emissões de carbono, a energia renovável se destaca como uma solução viável e eficaz. Além de 
+        contribuir para a preservação do meio ambiente, sua adoção promove a independência energética, a 
+        criação de empregos verdes e a inovação tecnológica. Neste site, convidamos você a explorar as diversas 
+        fontes de energia renovável, seus benefícios e como podemos juntos construir um futuro mais sustentável.
+        
+    </p>   
+    </div>
+    <div class="content">
+        <div class="block">
+            <img src="img/img2.jpg" alt="Imagem 1"> 
+            <div>
+                <h2>Energia Solar</h2>
+                <p>Energia solar: capturando a luz do sol para iluminar um futuro sustentável.</p>
+                <a href="Solar.html" class="button">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="block" id="home">
+            <div>
+                <h2>Energia Eólica</h2>
+                <p>A energia eólica transforma a força do vento em eletricidade limpa e sustentável, contribuindo para um futuro mais verde.</p>
+                <a href="#link5" class="button">Saiba Mais</a>
+            </div>
+            <img src="img/img3.jpg" alt="Imagem 5"> 
+
+        </div>
+        <div class="block">
+            <img src="img/img7.jpg" alt="Imagem 2">
+            <div>
+                <h2>Energia Hídrica</h2>
+                <p>A energia eólica transforma a força do vento em eletricidade limpa e sustentável, contribuindo para um futuro mais verde.</p>
+                <a href="eolica.html" class="button">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="block" id="home">
+            <div>
+                <h2>Energia Biomassa</h2>
+                <p>A energia da biomassa aproveita resíduos orgânicos para gerar eletricidade e calor, promovendo uma forma sustentável de reduzir desperdícios e emissões.</p>
+                <a href="#link5" class="button">Saiba Mais</a>
+            </div>
+            <img src="img/img4.jpg" alt="Imagem 5"> 
+
+        </div>
+        <div class="block">
+            <img src="img/img5.jpg" alt="Imagem 3"> 
+            <div>
+                <h2>Energia Geotérmica</h2>
+                <p>A energia geotérmica utiliza o calor da Terra para gerar eletricidade e aquecer ambientes, oferecendo uma fonte limpa e renovável de energia.</p>
+                <a href="#link3" class="button">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="block" id="home">
+            <div>
+                <h2>Energia Oceânica</h2>
+                <p>A energia oceânica aproveita as forças das ondas, marés e correntes marítimas para produzir eletricidade, contribuindo para um futuro sustentável e diversificado em fontes de energia.</p>
+                <a href="#link5" class="button">Saiba Mais</a>
+            </div>
+            <img src="img/img6.jpg" alt="Imagem 5"> 
+
+        </div>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Solar</title>
+    <style>
+        body {
+            margin: 0;
+            /*font-family: Arial, sans-serif;*/
+            font-family: "Roboto", sans-serif;
+        }
+        .h2{
+            color: #23282e;
+            /*line-height: 1;*/
+            font-style: normal;
+            font-size: 50px;
+            font:bold;
+        }
+        h3{
+            color: #0f0f61;
+            /*line-height: 1.2;*/
+            
+        }
+        .menu {
+            display: flex; /*O container passa a ser flexBox*/ 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: hsl(44, 100%, 53%);
+            /*color: rgb(66, 59, 59);*/
+            padding: 30px 0;
+            text-align: center;
+            z-index: 1000;
+            align-items: center;
+            flex-direction:row;
+            justify-content: center;
+            
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            font-size: 20px;
+            text-align: center;
+        }
+        .menu a:hover {
+            /*background-color: rgba(0, 0, 0, 0.199);*/
+        }
+        .hero {
+            background-image: url('img/img2.jpg'); /* Nome da imagem local */
+            height: 100vh; /* Ocupa a altura total da tela */
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            position: relative;
+            color: white;
+            background-size: cover; /* Cobre toda a área */
+            background-position: center; /* Centraliza a imagem */
+        }
+        .hero h1 {
+            position: absolute;
+            text-align: justify;
+            font-size: 7em;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .Text-coment {
+            display: flex; /*O container passa a ser flexBox*/ 
+            align-items: center;
+            margin: 10px 0;
+            width: 80%; /* Ocupa toda a largura */
+            max-width: 2000px; /* Limita a largura máxima dos blocos */
+            margin: 50px auto; /* Centraliza os blocos */
+            font-size: 20px;
+            text-align: justify;
+            line-height: 1.8; /* Espaçamento entre linhas */
+            letter-spacing: 0.5px; /* Espaçamento entre letras */
+            margin-bottom: 20px; /* Espaço entre parágrafos */
+            
+        }        
+        .block {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%; /* Ocupa toda a largura */
+            max-width: 1200px; /* Limita a largura máxima dos blocos */
+            margin: 10px auto; /* Centraliza os blocos */
+        }
+        .block img {
+            max-width: 400px; /* Tamanho da imagem */
+            margin-right: 30px; /* Espaçamento entre a imagem e o texto */
+        }
+        .block h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .block p {
+            margin: 5px 0 0;
+        }
+        .button {
+            background-color: hsl(44, 100%, 53%); /* Cor do botão */
+            color: white;
+            border: none;
+            padding: 3px 6px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2em;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px; /* Bordas arredondadas */
+        }
+        .button:hover {
+            background-color:hsl(44, 100%, 53%); /* Cor ao passar o mouse */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a>Início</a>
+        <a href="solar.html">Energia Solar</a>
+        <a href="eolica.html">Energia Eólica</a>
+        <a href="eolica.html">Energia Hídrica</a>
+        <a href="#contato">Energia Biomassa</a>
+        <a href="#faq">Energia Geotérmica</a>
+        <a href="#faq">Energia Oceânica</a>
+    </div>
+
+    <div class="hero" >
+        <h1>Energia Solar     </h1>        
+    </div>
+    <div >
+        
+     <p class="Text-coment">
+        A energia solar é uma forma de energia que vem do sol. Podemos captá-la principalmente de duas maneiras: usando painéis solares que transformam a luz do sol em eletricidade, ou usando sistemas que aquecem água aproveitando o calor do sol.
+
+        Quando instalamos painéis solares em telhados ou áreas abertas, eles capturam a luz solar e a convertem em eletricidade, que pode ser usada em casas, empresas ou até mesmo para carregar veículos elétricos. Essa eletricidade é limpa, ou seja, não polui o meio ambiente.
+        
+        Uma das grandes vantagens da energia solar é que ela é renovável. Isso significa que, enquanto o sol brilhar, sempre teremos essa fonte de energia disponível. Além disso, usar energia solar pode reduzir significativamente as contas de luz, já que você gera parte da eletricidade que consome.
+        
+        Outro benefício é que a energia solar ajuda a diminuir a dependência de combustíveis fósseis, que são limitados e poluentes. Com o aumento da preocupação com as mudanças climáticas, a energia solar se torna uma alternativa importante e sustentável para o futuro, contribuindo para um planeta mais saudável.
+        
+    </p>   
+    </div>
+    <div class="content">
+        <div class="block">
+            <img src="img/img2.jpg" alt="Imagem 1"> 
+            <div>
+                <h2>Energia Solar</h2>
+                <p>Energia solar: capturando a luz do sol para iluminar um futuro sustentável.</p>
+                <a href="Solar.html" class="button">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="block" id="home">
+            <div>
+                <h2>Consumidores</h2>
+                <p>As residências brasileiras lideram a expansão do mercado de Geração Distribuída de energia fotovoltaica, totalizando 792 mil sistemas fotovoltaicos instalados e ultrapassando a marca de 5 GW de potência instalada, segundo dados da Agência Nacional de Energia Elétrica (ANEEL) 
+
+                    Esse perfil de consumo supera a potência instalada em instalações comerciais (3,4 GW) e em propriedades rurais (1,4 GW). A potência instalada total da Geração Distribuída supera 10,8 GW no Brasil. Confira o percentual de acordo com cada perfil de consumidor: Fonte: ANEEL. </p>
+                <a href="https://blog.solfacil.com.br/energia-solar/graficos-sobre-energia-solar-que-voce-precisa-ver/" class="button">Saiba Mais</a>
+            </div>
+            <img src="img/consumidor_solar.jpg" alt="Imagem 5"> 
+
+        </div>
+        <div class="block">
+            <img src="img/paises_solar.jpg" alt="Imagem 2">
+            <div>
+                <h2>Energia Hídrica</h2>
+                <p>A energia eólica transforma a força do vento em eletricidade limpa e sustentável, contribuindo para um futuro mais verde.</p>
+                <a href="eolica.html" class="button">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="block" id="home">
+            <div>
+                <h2>Energia Biomassa</h2>
+                <p>A energia da biomassa aproveita resíduos orgânicos para gerar eletricidade e calor, promovendo uma forma sustentável de reduzir desperdícios e emissões.</p>
+                <a href="#link5" class="button">Saiba Mais</a>
+            </div>
+            <img src="img/img4.jpg" alt="Imagem 5"> 
+
+        </div>
+        <div class="block">
+            <img src="img/img5.jpg" alt="Imagem 3"> 
+            <div>
+                <h2>Energia Geotérmica</h2>
+                <p>A energia geotérmica utiliza o calor da Terra para gerar eletricidade e aquecer ambientes, oferecendo uma fonte limpa e renovável de energia.</p>
+                <a href="#link3" class="button">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="block" id="home">
+            <div>
+                <h2>Energia Oceânica</h2>
+                <p>A energia oceânica aproveita as forças das ondas, marés e correntes marítimas para produzir eletricidade, contribuindo para um futuro sustentável e diversificado em fontes de energia.</p>
+                <a href="#link5" class="button">Saiba Mais</a>
+            </div>
+            <img src="img/img6.jpg" alt="Imagem 5"> 
+
+        </div>
+        <div class="block">
+            <iframe width="1000" height="500" 
+            src="https://www.youtube.com/embed/F2bP7a07kEw" 
+            remote 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
